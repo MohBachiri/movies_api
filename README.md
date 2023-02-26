@@ -56,7 +56,7 @@
 * header: access_token
 * Method: `POST`
 * Form Params
-    * token
+    * access_token
     * production_id
 * Response:
     * json(['message','status' ], 200)
@@ -67,7 +67,7 @@
 * header: access_token
 * Method: `POST`
 * Form Params
-    * token
+    * access_token
     * production_id
 * Response:
     * json(['message','status' ], 200)
@@ -78,7 +78,7 @@
 * header: access_token
 * Method: `POST`
 * Form Params
-    * token
+    * access_token
 * Response:
     * json(['favorates','status ], 200)
  
