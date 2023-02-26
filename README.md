@@ -1,6 +1,6 @@
 
 # Movies/series api
-
+ 
 **Base URL:** `https://testapimovies.000webhostapp.com`
 
 ## Endpoints
