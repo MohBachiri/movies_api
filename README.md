@@ -1,18 +1,46 @@
 
+# Movies/series api
+
+**Base URL:** `https://testapimovies.000webhostapp.com`
+
+## Endpoints
+
+### create new  user
+* URL: `/api/auth/registration`
+* Method: `POST`
+* Form Params
+    * `username`: string
+    * `password`: (min:8)
+ * Response:
+    * filed :: json(['errors','status'=>"forbidden"], 403)
+    * success :: json(['access_token','messages','status','token_type'], 200)
+   
+
+### login  user
+* URL: `/api/auth/login`
+* Method: `POST`
+* Form Params
+    * `username`: string
+    * `password`:  (min:8)
+* Response:
+    * filed (error validation):: json(['errors','status'=>"forbidden"], 403)
+    * filed (error Unauthorized):: json(['message','status'], 401)
+    * success :: json(['access_token','status','token_type'], 200)
+
+### Update movie information
+* URL: `/:movieId`
+* Method: `PUT`
+* Form Params
+    * `title`: string
+    * `genre`: string
+    * `synopsis`: text
+    * `image`: image (mimes: `jpg, jpeg, png`, optional, min: 1Kb, max: 10Mb)
+
+### Delete a movie resource
+* URL: `/:movieId`
+* Method: `DELETE`
+* Params
+    * `movieId`: integer
 
 
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-
-
-
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
 
