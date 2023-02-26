@@ -99,7 +99,5 @@
 * URL: `/api/movies/details-movie/{movie_id}`
 * header: access_token
 * Method: `GET`
-* Form Params
-    * movie_id
 * Response:
     * json(['result','status ], 200)
