@@ -12,7 +12,7 @@
     * `username`
     * `password`
  * Response:
-    * filed :: json(['errors','status'=>"forbidden"], 403)
+    * filed :: json(['errors','status'], 403)
     * success :: json(['access_token','messages','status','token_type'], 200)
    
 
